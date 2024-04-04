@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>Expense Approval Notification</h1>
+  <p>
+    Dear <%= @employee.name %> 
+  </p>
+  <p>
+    Email <%= @employee.email %>
+  </p>
+  <p>
+    Your expense with details as follows has been approved:
+  </p>
+  <ul>
+    <li><strong><Expense ID:</strong><%=@expense.id %></li>
+    <li><strong>Expense Title:</strong> <%= @expense.description %></li>
+    <li><strong>Amount:</strong> <%= number_to_currency(@expense.amount) %></li>
+   
+  </ul>
+  <p>
+    Thank you!
+  </p>
+</body>
+</html>

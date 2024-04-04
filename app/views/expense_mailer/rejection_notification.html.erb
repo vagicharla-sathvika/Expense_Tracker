@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>Expense Rejection Notification</h1>
+  <p>
+    Dear <%= @employee.name %>,
+  </p>
+  <p>
+    Your expense with details as follows has been rejected:
+  </p>
+  <ul>
+    <li><strong><Expense ID:</strong><%=@expense.id %></li>
+    <li><strong>Expense Title:</strong> <%= @expense.description %></li>
+    <li><strong>You are rejected became your invoice is not correct</strong> </li>
+    <!-- Add more expense details here -->
+  </ul>
+  <p>
+    Thank you!
+  </p>
+</body>
+</html>
